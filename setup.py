@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="crypto-qr-codes",
-    version="0.1.7",
+    version="0.1.8",
     author="Robert Capla",
     author_email="robert.capla@icloud.com",
     description="A package for generating QR codes for various cryptocurrencies",
