@@ -21,7 +21,7 @@ crypto_address = "18Qz324MxCwBbrWqNv1Ew3vcgpi9N9DmXM"
 amount = 0.1
 message = "Payment for goods"
 
-create_qr_code(crypto_currency, crypto_address, amount, label, message)
+create_qr_code(crypto_currency, crypto_address, amount, message)
 ```
 ## Parameters
 The create_qr_code function takes the following parameters:
