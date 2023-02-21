@@ -16,10 +16,9 @@ To use Crypto QR Codes, import the `create_qr_code` function from the `crypto_qr
 ```python
 from crypto_qr_codes.qr import create_qr_code
 
-crypto_currency = "BTC"
-crypto_address = "3N8auHJMn6GQzVjKXF5e2eNn5b6d4wy4G4"
+crypto_currency = "bitcoin"
+crypto_address = "18Qz324MxCwBbrWqNv1Ew3vcgpi9N9DmXM"
 amount = 0.1
-label = "My Bitcoin Address"
 message = "Payment for goods"
 
 create_qr_code(crypto_currency, crypto_address, amount, label, message)
@@ -30,7 +29,6 @@ The create_qr_code function takes the following parameters:
 crypto_currency (required): A string that represents the cryptocurrency. <br>
 crypto_address (required): A string that represents the cryptocurrency address. <br>
 amount (optional): A float that represents the amount to be paid.<br>
-label (optional): A string that represents the label for the payment.<br>
 message (optional): A string that represents a message for the payment.<br>
 filename (optional): A string that represents the name of the file to save the QR code. Defaults to output.png.
 ## Returns
@@ -40,6 +38,8 @@ To run the tests for Crypto QR Codes, run the following command:
 ```bash
 python -m unittest tests.test_qr
 ```
+## Examples
+You can check the `examples.py` file for examples of how to use the package. The outputs of the examples are stored in the `qr_codes` folder.
 ## License
 This project is licensed under the MIT License.
 
