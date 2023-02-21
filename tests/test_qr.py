@@ -12,7 +12,7 @@ class TestQR(unittest.TestCase):
         message = "Payment"
         filename = "test_qr"
 
-        result = create_qr_code(crypto_currency, crypto_address, amount, label, message, filename)
+        result = create_qr_code(crypto_currency, crypto_address, amount, message, filename)
         self.assertTrue(result)
 
         img_path = os.path.join(os.getcwd(), "qr_codes", f"{filename}.png")
